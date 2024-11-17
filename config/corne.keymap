@@ -302,12 +302,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  [  |  {  |  }  |  (  |  =  |       |  *  |  )  |  +  |  ]  |  !  | DEL  |
-// | CTRL |  ~  |  %  |  `  | / ? | @ ^ |       |     | LFT | DWN | UP  | RGT |      |
+// | CTRL |  ~  |  %  |  `  | / ? | @ ^ |       |     | LFT | UP  | DWN | RGT |      |
 // | SHFT |  $  |  &  |  #  | - _ | \ | |       |     | HOME| PGDN| PGUP| END |      |
 //                    | ALT |     | SPC |       | ENT |     | CMD |
                         bindings = <
    &trans     &kp LBKT    &kp LBRC     &kp RBRC     &kp LPAR    &kp EQUAL       &kp STAR    &kp RPAR  &kp PLUS      &kp RBKT    &kp EXCL    &trans
-   &kp LCTRL  &kp TILDE   &kp PRCNT    &kp GRAVE    TD_SLSH     TD_ATCAT        &trans      &kp LEFT  &kp DOWN      &kp UP      &kp RIGHT   &trans
+   &kp LCTRL  &kp TILDE   &kp PRCNT    &kp GRAVE    TD_SLSH     TD_ATCAT        &trans      &kp LEFT  &kp UP        &kp DOWN      &kp RIGHT   &trans
    &trans     &kp DLLR    &kp AMPS     &kp HASH     TD_MINUS    TD_BSLS         &trans      &kp HOME  &kp PG_DN     &kp PG_UP    &kp END    &trans
                     	               &trans       &trans      &trans          &trans      &trans    &trans
                         >;
