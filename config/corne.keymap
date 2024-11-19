@@ -279,20 +279,20 @@
 // | LSFT:CAP | :;  | q @ | J   | K   |  X  |         |  B  |  M   |  W  |  V  |  Z  | `    |
 //                        | CMD | LWR | SPC |         | ENT | RSE  | CMD |
                         bindings = <
-   TD_TAB     TD_QUOTE  TD_COMM TD_DOT &kp P &kp Y                   &kp F &kp G  &kp C     &kp R   &kp L    &kp BSPC
-   &kp LCTRL  &kp A    &kp O   &kp E  &kp U &kp I                   &kp D &kp H  &kp T     &kp N   &kp S    TD_MINUS
-   TD_SCLOCK  TD_SCLN TD_ARR  &kp J  &kp K &kp X                   &kp B &kp M  &kp W     &kp V   &kp Z    &kp GRAVE
-                             TD_ALT  &mo 2 &kp ENTER                   TD_SPC &mo 1 TD_ALT
+   TD_TAB       TD_QUOTE    TD_COMM     TD_DOT  &kp P   &kp Y       &kp F   &kp G   &kp C   &kp R   &kp L   &kp BSPC
+   &kp LCTRL    &kp A       &kp O       &kp E   &kp U   &kp I       &kp D   &kp H   &kp T   &kp N   &kp S   TD_MINUS
+   TD_SCLOCK    TD_SCLN     TD_ARR      &kp J   &kp K   &kp X       &kp B   &kp M   &kp W   &kp V   &kp Z   &kp GRAVE
+                                        TD_ALT  &mo 2   TD_SPC      TD_SPC  &mo 1   TD_ALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC   |  7   |  5  |  3  |  1  |  9  |            |  0  |  2  |  4  |  6  |  8  |      |
+// |  ESC   |  7   |  5  |  3  |  1  |  9  |            |  0  |  2  |  4  |  6  |  8  | ENT  |
 // | F1     |  F2  |  F3 |  F4 |  F5 |  F6 |            | F7  | F8  | F9  | F10 | F11 | F12  |
 // | SHFT   |      |     |     |     |     |            |     |     |     |     |     |      |
 //                       |     |     |     |            |     |     |     |
                         bindings = <
-   &trans     &seven_lbkt   &five_lbrc  &three_rbrc &one_lpar   &nine_equal          &zero_s    &two_par    &four_pl    &six_rbkt   &eight_exlm &trans
+   &trans     &seven_lbkt   &five_lbrc  &three_rbrc &one_lpar   &nine_equal          &zero_s    &two_par    &four_pl    &six_rbkt   &eight_exlm &kp ENTER
    &kp F1     &kp F2        &kp F3      &kp F4      &kp F5      &kp F6               &kp F7     &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
    &trans     &trans        &trans      &trans      &trans      &trans               &trans     &trans      &trans      &trans      &trans      &trans
                           	            &trans      &trans      &trans               &trans     &trans      &trans
