@@ -32,7 +32,7 @@
 #define TD_COMM     &td9    // COMMA LESS_THAN
 #define TD_DOT      &td10   // PERIOD GREATER_THAN
 #define TD_BACKF    &td11   // GRAVE TILDE
-#define TD_ALT      &td12   // LALT LGUI
+#define TD_ALT      &td12   // LGUI LALT
 #define TD_ARR      &td13   // Q AT (@)
 #define TD_ATCAT    &td14   // AT CARET
 #define TD_TAW      &td15   // TAB LWIN
@@ -157,7 +157,7 @@
             label = "TAP_DANCE_12";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_SPEED>;
-            bindings = <&kp LALT>, <&kp LGUI>;
+            bindings = <&kp LGUI>, <&kp LALT>;
             };
         td13: tap_dance_13 {
             compatible = "zmk,behavior-tap-dance";
@@ -275,14 +275,14 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |TAB:ESC   | ' " | , < | . > |  P  |  Y  |         | F   |  G   |  C  |  R  |  L  | BKSP |
-// | CTRL     |  A  |  O  |  E  |  U  |  I  |         |  D  |  H   |  T  |  N  |  S  |  -_  |
-// | LSFT:CAP | :;  | q @ | J   | K   |  X  |         |  B  |  M   |  W  |  V  |  Z  | TAB  |
-//                        | ALT | LWR | SPC |         | ENT | RSE  | CMD |
+// | CTRL     |  A  |  O  |  E  |  U  |  I  |         |  D  |  H   |  T  |  N  |  S  | -_   |
+// | LSFT:CAP | :;  | q @ | J   | K   |  X  |         |  B  |  M   |  W  |  V  |  Z  | `    |
+//                        | CMD | LWR | SPC |         | ENT | RSE  | CMD |
                         bindings = <
    TD_TAB     TD_QUOTE  TD_COMM TD_DOT &kp P &kp Y                   &kp F &kp G  &kp C     &kp R   &kp L    &kp BSPC
    &kp LCTRL  &kp A    &kp O   &kp E  &kp U &kp I                   &kp D &kp H  &kp T     &kp N   &kp S    TD_MINUS
-   TD_SCLOCK  TD_SCLN TD_ARR  &kp J  &kp K &kp X                   &kp B &kp M  &kp W     &kp V   &kp Z    TD_TAW
-                             TD_ALT  &mo 1 TD_SPC                   TD_SPC &mo 2 &kp LGUI
+   TD_SCLOCK  TD_SCLN TD_ARR  &kp J  &kp K &kp X                   &kp B &kp M  &kp W     &kp V   &kp Z    &kp GRAVE
+                             TD_ALT  &mo 2 &kp ENTER                   TD_SPC &mo 1 TD_ALT
                         >;
                 };
                 lower_layer {
