@@ -287,12 +287,12 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC   |  7   |  5  |  3  |  1  |  9  |            |  0  |  2  |  4  |  6  |  8  | ENT  |
+// |  ESC   |  7   |  5  |  3  |  1  |  9  |            |  0  |  2  |  4  |  6  |  8  | BKSP |
 // | F1     |  F2  |  F3 |  F4 |  F5 |  F6 |            | F7  | F8  | F9  | F10 | F11 | F12  |
 // | SHFT   |      |     |     |     |     |            |     |     |     |     |     |      |
 //                       |     |     |     |            |     |     |     |
                         bindings = <
-   &trans     &seven_lbkt   &five_lbrc  &three_rbrc &one_lpar   &nine_equal          &zero_s    &two_par    &four_pl    &six_rbkt   &eight_exlm &kp ENTER
+   &trans     &seven_lbkt   &five_lbrc  &three_rbrc &one_lpar   &nine_equal          &zero_s    &two_par    &four_pl    &six_rbkt   &eight_exlm &trans
    &kp F1     &kp F2        &kp F3      &kp F4      &kp F5      &kp F6               &kp F7     &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
    &trans     &trans        &trans      &trans      &trans      &trans               &trans     &trans      &trans      &trans      &trans      &trans
                           	            &trans      &trans      &trans               &trans     &trans      &trans
@@ -301,14 +301,14 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  [  |  {  |  }  |  (  |  =  |       |  *  |  )  |  +  |  ]  |  !  | DEL  |
-// | CTRL |  ~  |  %  |  `  | / ? | @ ^ |       |     | LFT | UP  | DWN | RGT |      |
-// | SHFT |  $  |  &  |  #  | - _ | \ | |       |     | HOME| PGDN| PGUP| END |      |
+// |  ESC |  [  |  {  |  }  |  (  |  =  |       |  *  |  )  |  +  |  ]  |  !   | DEL  |
+// | CTRL |  ~  |  %  |  `  | / ? | @ ^ |       |     | LFT | UP  | RGT | PGUP |      |
+// | SHFT |  $  |  &  |  #  | - _ | \ | |       |     | HOME| DWN | END | PGDN |      |
 //                    | ALT |     | SPC |       | ENT |     | CMD |
                         bindings = <
    &trans     &kp LBKT    &kp LBRC     &kp RBRC     &kp LPAR    &kp EQUAL       &kp STAR    &kp RPAR  &kp PLUS      &kp RBKT    &kp EXCL    &trans
-   &kp LCTRL  &kp TILDE   &kp PRCNT    &kp GRAVE    TD_SLSH     TD_ATCAT        &trans      &kp LEFT  &kp UP        &kp DOWN      &kp RIGHT   &trans
-   &trans     &kp DLLR    &kp AMPS     &kp HASH     TD_MINUS    TD_BSLS         &trans      &kp HOME  &kp PG_DN     &kp PG_UP    &kp END    &trans
+   &kp LCTRL  &kp TILDE   &kp PRCNT    &kp GRAVE    TD_SLSH     TD_ATCAT        &trans      &kp LEFT  &kp UP        &kp RIGHT   &kp PG_UP   &trans
+   &trans     &kp DLLR    &kp AMPS     &kp HASH     TD_MINUS    TD_BSLS         &trans      &kp HOME  &kp DOWN      &kp END     &kp PG_DN   &trans
                     	               &trans       &trans      &trans          &trans      &trans    &trans
                         >;
                 };
