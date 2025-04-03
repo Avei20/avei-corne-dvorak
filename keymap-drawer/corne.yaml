@@ -19,7 +19,7 @@ layers:
   - {t: E, h: LSHIFT}
   - {t: U, h: LCTRL}
   - I
-  - '&hmr D'
+  - D
   - {t: H, h: RCTRL}
   - {t: T, h: RSHIFT}
   - {t: N, h: RALT}
