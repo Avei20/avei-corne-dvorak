@@ -310,7 +310,7 @@
 //                        | CMD | LWR | SPC |         | ENT | RSE  | CMD |
                         bindings = <
    TD_TAB       TD_QUOTE        TD_COMM         &kp PERIOD      &kp P           &kp Y       &kp F       &kp G           &kp C           &kp R           &kp L           &kp BSPC
-   &kp LCTRL    &hml LGUI A     &hml LALT O     &hml LSHIFT E   &hml LCTRL U    &kp I       &hmr D      &hmr RCTRL H    &hmr RSHIFT T   &hmr RALT N     &hmr RGUI S     &kp MINUS
+   &kp LCTRL    &hml LGUI A     &hml LALT O     &hml LSHIFT E   &hml LCTRL U    &kp I       &kp D       &hmr RCTRL H    &hmr RSHIFT T   &hmr RALT N     &hmr RGUI S     &kp MINUS
    TD_SCLOCK    TD_SCLN         TD_ARR          &kp J           &kp K           &kp X       &kp B       &kp M           &kp W           &kp V           &kp Z           &kp GRAVE
                                             TD_ALT      &mo 2   TD_SPC      TD_SPC  &mo 1   TD_ALT
                         >;
