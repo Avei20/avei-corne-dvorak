@@ -1,0 +1,174 @@
+layout: {zmk_keyboard: corne}
+layers:
+  default:
+  - '&td0'
+  - '&td4'
+  - '&td9'
+  - .
+  - P
+  - Y
+  - F
+  - G
+  - C
+  - R
+  - L
+  - BSPC
+  - LCTRL
+  - {t: A, h: LGUI}
+  - {t: O, h: LALT}
+  - {t: E, h: LSHIFT}
+  - {t: U, h: LCTRL}
+  - I
+  - '&hmr D'
+  - {t: H, h: RCTRL}
+  - {t: T, h: RSHIFT}
+  - {t: N, h: RALT}
+  - {t: S, h: RGUI}
+  - '-'
+  - '&td16'
+  - '&td8'
+  - '&td13'
+  - J
+  - K
+  - X
+  - B
+  - M
+  - W
+  - V
+  - Z
+  - '`'
+  - '&td12'
+  - raise
+  - '&td2'
+  - '&td2'
+  - lower
+  - '&td12'
+  lower:
+  - {t: ▽, type: trans}
+  - {t: '7', s: '['}
+  - {t: '5', s: '{'}
+  - {t: '3', s: '}'}
+  - {t: '1', s: (}
+  - {t: '9', s: '='}
+  - {t: '0', s: '*'}
+  - {t: '2', s: )}
+  - {t: '4', s: +}
+  - {t: '6', s: ']'}
+  - {t: '8', s: '!'}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  raise:
+  - {t: ▽, type: trans}
+  - '['
+  - '{'
+  - '}'
+  - (
+  - '='
+  - '*'
+  - )
+  - +
+  - ']'
+  - '!'
+  - {t: ▽, type: trans}
+  - LCTRL
+  - '~'
+  - '%'
+  - '`'
+  - '&td3'
+  - '&td14'
+  - {t: ▽, type: trans}
+  - LEFT
+  - UP
+  - RIGHT
+  - PG UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $
+  - '&'
+  - '#'
+  - '&td7'
+  - '&td6'
+  - {t: ▽, type: trans}
+  - HOME
+  - DOWN
+  - END
+  - PG DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  bt_media:
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - LEFT
+  - PREV
+  - PP
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LALT
+  - {type: held}
+  - SPACE
+  - RET
+  - {type: held}
+  - RGUI
