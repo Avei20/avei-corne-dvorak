@@ -62,13 +62,19 @@
 };
 */
 
-&mt {
-    tapping-term-ms = <MT_SPEED_LEFT>;
-};
 
 / {
     behaviors{
         // Create home row mod
+
+        cmt: custom_mod_tap {
+            compatible = "zmk,behavior-mod-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preffered";
+            tapping-term-ms = <MT_SPEED_LEFT>;
+            bindings = <&kp>,<&kp>;
+            display-name = "Custom Mod Tap";
+        };
 
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -283,9 +289,9 @@
 // | LSFT:CAP | :;  | q @ | J   | K   |  X  |         |  B  |  M   |  W  |  V  |  Z  | `    |
 //                        | CMD | LWR | SPC |         | ENT | RSE  | CMD |
                         bindings = <
-   TD_TAB       TD_QUOTE        TD_COMM         &kp PERIOD      &kp P           &kp Y       &kp F   &kp G           &kp C           &kp R           &kp L       &kp BSPC
-   &kp LCTRL    &mt LGUI A       &mt LALT O     &mt LSHIFT E    &mt LCTRL U     &kp I       &kp D   &mt RCTRL H     &mt RSHIFT T    &mt RALT N      &mt RGUI S  &kp MINUS
-   TD_SCLOCK    TD_SCLN         TD_ARR          &kp J           &kp K           &kp X       &kp B   &kp M           &kp W           &kp V           &kp Z       &kp GRAVE
+   TD_TAB       TD_QUOTE        TD_COMM         &kp PERIOD      &kp P           &kp Y       &kp F   &kp G           &kp C           &kp R           &kp L           &kp BSPC
+   &kp LCTRL    &cmt LGUI A     &cmt LALT O     &cmt LSHIFT E   &cmt LCTRL U    &kp I       &kp D   &cmt RCTRL H    &cmt RSHIFT T   &cmt RALT N     &cmt RGUI S     &kp MINUS
+   TD_SCLOCK    TD_SCLN         TD_ARR          &kp J           &kp K           &kp X       &kp B   &kp M           &kp W           &kp V           &kp Z           &kp GRAVE
                                             TD_ALT      &mo 2   TD_SPC      TD_SPC  &mo 1   TD_ALT
                         >;
                 };
