@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-mod-tap";
             #binding-cells = <2>;
             flavor = "hold-preffered";
-            tapping-term-ms = <MT_SPEED_LEFT>;
+            tapping-term-ms = <MT_SPEED_RIGHT>;
             bindings = <&kp>,<&kp>;
             display-name = "Custom Mod Tap";
         };
