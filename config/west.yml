@@ -7,10 +7,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3        # ← this is what pins the actual ZMK source
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
-      revision: main
+      revision: main        # zmk-helpers tracks main, generally fine
   self:
     path: config
